@@ -1,4 +1,4 @@
-package com.caps.sales.resources;
+package com.caps.sales.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +9,7 @@ import com.caps.sales.model.User;
 
 @RestController
 @RequestMapping(value = "/users")
-public class UserResource {
+public class UserController {
 	
 	@GetMapping
 	public ResponseEntity<User> findAll() {
